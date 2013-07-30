@@ -1,12 +1,8 @@
 require 'sinatra'
 
-get '/' do
-    erb :index
-
-end
 
 get '/' do
-    erb :home
+    erb :city
 end
 
 
