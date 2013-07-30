@@ -6,7 +6,7 @@ end
 
 
 get '/:city' do
-    city = params[:city].split('').map(&:capitalize).join(' ')
+    city = params[:city].split(" ").map(&:capitalize).join(" ")
     @message = "#{city}"
     erb :index
 end
