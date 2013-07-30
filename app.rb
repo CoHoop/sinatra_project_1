@@ -5,9 +5,14 @@ get '/' do
 
 end
 
+get '/' do
+    erb :home
+end
+
+
 get '/:city' do
     city = params[:city].capitalize
-    @message = "You live in #{city}"
+    @message = "#{city}"
     erb :index
 end
 
