@@ -7,8 +7,7 @@ end
 
 get '/:city' do
     @city = params[:city]
-    message = "You live in #{params}"
+    erb :city
 end
-
 
 
