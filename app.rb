@@ -6,7 +6,7 @@ get '/' do
 end
 
 get '/:city' do
-    @city = params[:city]
+    city = params[:city].capitalize
     @message = "You live in #{city}"
     erb :index
 end
